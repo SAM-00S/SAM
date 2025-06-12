@@ -1,0 +1,70 @@
+.line{
+            background-color: coral;
+        }
+        #new{
+              font-family: fantasy;
+        }
+        h3{
+             background-color: rgb(255, 94, 0);
+        }
+        
+        .sam p{
+            color:aqua;
+        }
+
+        p:hover{
+            color: rgb(233, 6, 6);
+        }
+
+         .border{
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 30px;
+            border-style: dashed;
+        }
+
+        .margin{
+            border: 3px solid black;
+            padding: 20px;
+        }
+         .margin1{
+            border: 3px solid black;
+            margin-top: 50px;
+        }
+        .static{
+            position: static;
+        }
+        .position{
+                border: 5px solid red;
+        }
+        .relative{
+            position: absolute;
+            top: 50px;
+            
+        }
+        .page{
+            height: 100vh;
+        }
+        .fixed{
+            position: fixed;
+            top: 100px;
+        }
+        .sticky{
+            position: sticky;
+            top: 50px;
+        }
+        .inline{
+                display: inline;     
+        }
+        .flex-container{
+            display: flex;
+        }
+        .item {
+            background-color: cornflowerblue;
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+        }
+        .item{
+            flex-grow: 2;
+        }
