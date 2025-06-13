@@ -12,8 +12,8 @@
             color:aqua;
         }
 
-        p:hover{
-            color: rgb(233, 6, 6);
+        p:hover{ 
+            color:rgb(255, 8, 8);
         }
 
          .border{
@@ -35,7 +35,7 @@
             position: static;
         }
         .position{
-                border: 5px solid red;
+                border: 5px solid rgb(0, 255, 98);
         }
         .relative{
             position: absolute;
@@ -58,13 +58,92 @@
         }
         .flex-container{
             display: flex;
+            /* flex-direction:row; */
+            justify-content:space-between;
+            align-items: center;
+            background-color: aqua;
+            height: 100vh;
         }
         .item {
-            background-color: cornflowerblue;
+            background-color:salmon;
             border: 2px solid red;
             height: 100px;
             width: 100px;
         }
-        .item{
-            flex-grow: 2;
+        .item2{
+            /* flex-grow: 2; */
+            flex: shrink 0;
+                 
+
         }
+        .Navbar{
+            display: flex;
+            justify-content:space-between;
+            padding-left: 10px;
+            padding-right: 20px;
+            color: black;
+            background-color: aquamarine;
+            border-radius: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            
+        }
+        .container{
+            display: flex;
+            gap: 40px;
+            
+        }
+        .grid-container {
+            display: grid;
+            grid-template-rows: 100px 100px 100px ;
+            grid-template-columns: 100px 100px 100px;
+            gap: 20px
+        }
+        .grid-container div{
+            background-color: lightcoral;
+            border: 2px solid red;
+        }
+        .item1{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .item3{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        } 
+        .grid-container1{
+            display: grid;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px 100px;
+            gap: 10px
+        }
+        .grid-container1 div{
+            background-color:coral;
+            border: 2px solid red;
+        }
+        .item4{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        } 
+        .item5{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        } 
+        .item6{
+            grid-column-start: 4;
+        } 
+        .item7{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        @media(max-width: 720px){
+            .Navbar{
+                display: flex;
+                flex-direction: column
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+          

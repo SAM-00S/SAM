@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM PROFESSIONAL</title>
+    <meta name="description" content="[Brief description of your business for SEO]">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #185a9d;
+            --secondary: #43cea2;
+            --accent: #ffd200;
+            --bg: #f5f7fa;
+            --cta: #ee0979;
+            --cta-hover: #ff6a00;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: var(--bg);
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+            color: #fff;
+            padding: 32px 0 16px 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        nav {
+            margin-top: 18px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        nav a:focus, nav a:hover {
+            color: var(--accent);
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44,62,80,0.10);
+            padding: 40px 32px;
+            gap: 32px;
+        }
+        .hero-content {
+            flex: 1 1 320px;
+        }
+        .hero-content h2 {
+            color: var(--primary);
+            font-size: 2em;
+            margin-top: 0;
+        }
+        .hero-content p {
+            font-size: 1.15em;
+            margin: 18px 0 28px 0;
+        }
+        .cta-btn {
+            background: linear-gradient(90deg, var(--cta), var(--cta-hover));
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 14px 36px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+            box-shadow: 0 2px 12px rgba(255,106,0,0.10);
+        }
+        .cta-btn:focus, .cta-btn:hover {
+            background: linear-gradient(90deg, var(--cta-hover), var(--cta));
+            transform: scale(1.04);
+            outline: 2px solid var(--accent);
+        }
+        .hero-img {
+            flex: 1 1 320px;
+            min-width: 260px;
+            text-align: center;
+        }
+        .hero-img img {
+            max-width: 100%;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+            alt: "High-quality illustration representing [type of business]";
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            max-width: 1100px;
+            margin: 48px auto 0 auto;
+        }
+        .feature {
+            flex: 1 1 260px;
+            background: linear-gradient(135deg, #f7971e 0%, var(--accent) 100%);
+            color: #222;
+            border-radius: 12px;
+            padding: 28px 18px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .feature:focus-within, .feature:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+            outline: 2px solid var(--primary);
+        }
+        .feature i {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            display: block;
+            color: var(--primary);
+        }
+        .feature h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+        .feature p {
+            font-size: 1em;
+        }
+        footer {
+            background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 48px;
+            border-radius: 0 0 18px 18px;
+        }
+        @media (max-width: 900px) {
+            .hero, .features {
+                flex-direction: column;
+                padding: 24px 10px;
+            }
+            .hero-img, .hero-content {
+                min-width: 0;
+            }
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5em; }
+            .hero-content h2 { font-size: 1.2em; }
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>SAM PROFESSIONAL</h1>
+        <nav aria-label="Main navigation">
+            <a href="#" tabindex="0">Home</a>
+            <a href="#features" tabindex="0">Features</a>
+            <a href="#about" tabindex="0">About</a>
+            <a href="#contact" tabindex="0">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" aria-label="Homepage hero section">
+            <div class="hero-content">
+                <h2>Welcome to SAM PROFESSIONAL</h2>
+                <p>
+                    It is a business about logistics 
+                    and supply chain management, providing solutions to streamline operations and enhance efficiency.
+                </p>
+                <button class="cta-btn" onclick="location.href='#contact'">Get Started</button>
+            </div>
+            <div class="hero-img">
+                <img src="https://www.michiganstateuniversityonline.com/wp-content/uploads/sites/3/2014/04/logistics-fundamentals-supply-chain.jpg?w=715&h=375&crop=1" 
+                     alt="SAM PROFESSIONAL logistics illustration">
+            </div>
+        </section>
+        <section class="features" id="features" aria-label="Key features">
+            <div class="feature" tabindex="0">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast & Reliable</h3>
+                <p>Lightning-fast performance and uptime you can trust, ensuring your users always have access.</p>
+            </div>
+            <div class="feature" tabindex="0">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Friendly</h3>
+                <p>Responsive design for a seamless experience on any device, anywhere.</p>
+            </div>
+            <div class="feature" tabindex="0">
+                <i class="fas fa-user-shield"></i>
+                <h3>Secure & Accessible</h3>
+                <p>Built with accessibility and security in mind, so everyone can use your site safely.</p>
+            </div>
+            <div class="feature" tabindex="0">
+                <i class="fas fa-search"></i>
+                <h3>SEO Optimized</h3>
+                <p>Structured for search engines to help your business get discovered online.</p>
+            </div>
+        </section>
+        <!-- About and Contact sections can be added here -->
+    </main>
+    <footer>
+        &copy; 2025 SAM PROFESSIONAL. All rights reserved.
+    </footer>
+</body>
+</html>
